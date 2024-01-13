@@ -19,4 +19,16 @@
 .motograu-game .chat-container {
   background: linear-gradient(133deg,#000000 0%,#1c101d 50%,#462948 100%)!important
  }
- 
+
+.motograu-navbar {
+  background: linear-gradient(133deg,#100c11 0%,#1c101d 50%,#281829 100%)!important
+}
+
+@font-face {
+  font-family: "lexend";
+  src: url('../../assets/font-lexend/Lexend-VariableFont_wght.ttf')
+}
+
+.font-lexend {
+  font-family: "lexend"
+}
