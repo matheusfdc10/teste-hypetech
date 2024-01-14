@@ -26,9 +26,18 @@
 
 @font-face {
   font-family: "lexend";
-  src: url('../../assets/font-lexend/Lexend-VariableFont_wght.ttf')
+  src: url('../../assets/fonts/font-lexend/Lexend-VariableFont_wght.ttf')
 }
 
 .font-lexend {
   font-family: "lexend"
+}
+
+@font-face {
+  font-family: "bungeeSpice";
+  src: url('../../assets/fonts/Bungee-Spice/BungeeSpice-Regular.ttf')
+}
+
+.font-bungeeSpice {
+  font-family: "bungeeSpice"
 }

@@ -64,7 +64,7 @@ function HomePage() {
                     src="/motograu/index.html"
                   />
                   <div className="transform absolute top-14 w-full">
-                    <Display color={'orange'} />
+                    <Display />
                   </div>
                   <Snackbar />
                   <button

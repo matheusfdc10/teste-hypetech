@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import ProgressBar from '@/core/components/progress-bar'
+import ProgressBar from '@/games/motograu/componentss/progress-bar'
 import If from '@/core/components/conditions/if'
 import { GameStatus } from '@/core/providers/enums/game-status'
 import { CrashGameContext } from '@/core/providers/games/crash-game.provider'
 
 type Props = {
-  color: string
+  color?: string
 }
 
 export default function Display({ color }: Props) {
@@ -13,10 +13,10 @@ export default function Display({ color }: Props) {
     useContext<any>(CrashGameContext)
 
   return (
-    <div className="absolute top-0 pointer-events-none left-0 flex flex-col gap-3 justify-center items-center w-full h-full">
+    <div className="absolute top-6 pointer-events-none left-0 flex flex-col gap-3 justify-center items-center w-full h-full">
       <If condition={gameStatus == GameStatus.IDLE}>
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-44">
+          <div className="w-44 sm:w-72 md:w-80 lg:w-96">
             <ProgressBar
               max={10}
               value={startTimeout}
@@ -29,9 +29,9 @@ export default function Display({ color }: Props) {
       <If condition={gameStatus == GameStatus.RUNNING}>
         <div className="relative flex justify-center items-center">
           <h1
-            className="text-6xl md:text-6xl lg:text-6xl font-bold text-gray-200 drop-shadow"
+            className="text-6xl md:text-6xl lg:text-6xl font-black text-[#531e53] drop-shadow"
             style={{
-              WebkitTextStroke: '1px #000',
+              WebkitTextStroke: '0.4px #fff',
             }}
           >
             {multiplier?.toFixed(2)}x
@@ -54,7 +54,7 @@ export default function Display({ color }: Props) {
 
       <If condition={gameStatus == GameStatus.GAME_OVER}>
         <h1
-          className="text-2xl sm:text-2xl text-gray-200 font-extrabold uppercase "
+          className="text-2xl sm:text-2xl text-gray-200 font-extrabold uppercase font-bungeeSpice"
           style={{
             WebkitTextStroke: '1px #000',
           }}
@@ -64,7 +64,7 @@ export default function Display({ color }: Props) {
         <h1
           className={`text-6xl md:text-6xl lg:text-6xl font-bold text-red-600 drop-shadow`}
           style={{
-            WebkitTextStroke: '1px #000',
+            WebkitTextStroke: '0.6px #000',
           }}
         >
           {multiplier.toFixed(2)}x

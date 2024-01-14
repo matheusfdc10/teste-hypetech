@@ -87,7 +87,7 @@ export const Chat = ({ show, togleShowChat }: Props) => {
                         </div>
                       </div>
 
-                      <div className="chat-bubble min-h-0">
+                      <div className="chat-bubble min-h-0 break-all">
                         {data.message}
                       </div>
                       <div className="chat-footer text-xs opacity-50">
@@ -103,7 +103,7 @@ export const Chat = ({ show, togleShowChat }: Props) => {
                           <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png" />
                         </div>
                       </div>
-                      <div className="chat-bubble min-h-0">
+                      <div className="chat-bubble min-h-0 break-all">
                         {data.message}
                       </div>
                       <div className="chat-footer text-xs opacity-50">
