@@ -79,7 +79,7 @@ function HomePage() {
                   </button>
                   <If condition={!showChat}>
                     <button
-                      className="btn p-1 rounded-full absolute z-[5] top-2 right-2 sm:top-3 sm:right-3 bg-[#ff7700] hover:bg-[#d26200] border-none"
+                      className="btn p-1 rounded-full absolute z-[5] top-2 right-2 sm:top-3 sm:right-3 bg-[#ff7700] hover:bg-[#d26200] border-none shadow-md"
                       onClick={() => {
                         handleShowChat()
                         soundClick()
