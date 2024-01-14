@@ -31,7 +31,8 @@ export default function Display({ color }: Props) {
           <h1
             className="text-6xl md:text-6xl lg:text-6xl font-black text-[#531e53] drop-shadow"
             style={{
-              WebkitTextStroke: '0.4px #fff',
+              // WebkitTextStroke: '0.4px #fff',
+              textShadow: '1px 1px 1px #fff', 
             }}
           >
             {multiplier?.toFixed(2)}x
@@ -42,9 +43,10 @@ export default function Display({ color }: Props) {
       <If condition={gameStatus == GameStatus.MAINTENANCE}>
         <div className="relative flex justify-center items-center">
           <h1
-            className="text-2xl md:text-3xl uppercase lg:text-3xl font-bold text-gray-200 drop-shadow"
+            className="text-2xl md:text-3xl uppercase lg:text-3xl font-bold text-red-600 drop-shadow"
             style={{
-              WebkitTextStroke: '1px #000',
+              // WebkitTextStroke: '1px #000',
+              textShadow: '1px 1px 2px #000', 
             }}
           >
             Em manutenção!
@@ -56,7 +58,8 @@ export default function Display({ color }: Props) {
         <h1
           className="text-2xl sm:text-2xl text-gray-200 font-extrabold uppercase font-bungeeSpice"
           style={{
-            WebkitTextStroke: '1px #000',
+            // WebkitTextStroke: '1px #000',
+            textShadow: '1px 2px 1px #000', 
           }}
         >
           O piloto caiu!
@@ -64,7 +67,8 @@ export default function Display({ color }: Props) {
         <h1
           className={`text-6xl md:text-6xl lg:text-6xl font-bold text-red-600 drop-shadow`}
           style={{
-            WebkitTextStroke: '0.6px #000',
+            // WebkitTextStroke: '0.6px #000',
+            textShadow: '1px 1px 2px #000', 
           }}
         >
           {multiplier.toFixed(2)}x
